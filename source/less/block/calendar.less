@@ -1,0 +1,37 @@
+.calendar {
+  margin-bottom: 40px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.calendar__container {
+  background-color: #fff;
+  border: 4px solid #000;
+  box-sizing: border-box;
+  height: 365px;
+  margin: 0 auto;
+  padding-top: 40px;
+  position: relative;
+  width: 445px;
+}
+
+.calendar__table {
+  border-collapse: collapse;
+  color: #000;
+  height: 320px;
+  margin: 0 auto;
+  width: 400px;
+}
+
+td,
+th {
+  font-size: 18px;
+  text-align: center;
+}
+
+.is-today {
+  background-color: @today;
+  border-radius: 50px;
+  color: #000;
+  opacity: 1;
+}
