@@ -291,7 +291,7 @@ th {
   font-size: 60px;
   line-height: 60px;
   letter-spacing: 5px;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   width: 100%;
 }
