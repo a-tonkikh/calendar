@@ -382,14 +382,14 @@ th {
   width: 111px;
   z-index: -1;
 }
-.pusheen__container--pumpkin:active::before {
+.pusheen__container--on-click::before {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
   opacity: 0;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
 }
-.pusheen__container--pumpkin:active::after {
+.pusheen__container--on-click::after {
   -webkit-transform: translateY(-82px);
           transform: translateY(-82px);
   -webkit-transition-duration: 0.4s;
