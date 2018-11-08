@@ -1,13 +1,19 @@
 .hero {
   align-items: center;
-  background-image: url("../img/nov.jpg");
+  background-image: url("../img/pusheen-simple.png");
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 200px;
-  margin: 40px auto;
-  width: 600px;
+  height: 240px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  padding: 0;
+  padding-right: 20px;
+  padding-top: 30px;
+  width: 550px;
 }
 
 .hero__calendar {
@@ -17,4 +23,20 @@
   letter-spacing: 5px;
   margin: auto;
   text-align: center;
+  width: 100%;
+}
+
+
+@media (max-width: @mobile-width-max) {
+  .hero {
+    height: 165px;
+    padding-right: 5px;
+    padding-top: 25px;
+    width: 300px;
+  }
+
+  .hero__calendar {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }

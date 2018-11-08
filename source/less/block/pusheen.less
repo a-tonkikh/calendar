@@ -1,0 +1,66 @@
+.pusheen {
+  bottom: 0;
+  height: auto;
+  position: absolute;
+  right: -50px;
+  width: 150px;
+}
+
+.pusheen__container {
+  height: 150px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: 158px;
+  z-index: 10;
+
+  &--pumpkin {
+    &::before {
+      background-image: url("../img/top-pmkn.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: "";
+      height: 151px;
+      left: 1px;
+      margin: 0 auto;
+      position: absolute;
+      top: 0;
+      width: 159px;
+      z-index: 2;
+    }
+
+    &::after {
+      background-image: url("../img/boo.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: "";
+      height: 130px;
+      left: 21px;
+      position: absolute;
+      top: 30px;
+      width: 111px;
+      z-index: -1;
+    }
+  }
+
+  &--pumpkin:active {
+    &::before {
+      transform: translateY(-10px);
+      opacity: 0;
+      transition-duration: 0.3s;
+    }
+
+    &::after {
+      transform: translateY(-82px);
+      transition-duration: 0.4s;
+    }
+  }
+}
+
+
+@media (max-width: @mobile-width-max) {
+  .pusheen {
+    right: 0;
+    bottom: -35px;
+  }
+}

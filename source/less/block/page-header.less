@@ -2,6 +2,20 @@
   background-color: transparent;
   left: 0;
   position: absolute;
-  top: 0;
   width: 100px;
+  z-index: 10;
+}
+
+@media (min-width: @mobile-width-max) {
+  .page-header {
+    top: 0;
+  }
+}
+
+@media (max-width: @mobile-width-max) {
+  .page-header {
+    bottom: 0;
+    margin: 0 auto;
+    right: 0;
+  }
 }
