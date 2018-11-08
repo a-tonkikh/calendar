@@ -187,6 +187,20 @@ body {
   padding: 0;
   position: relative;
 }
+main {
+  display: block;
+}
+td,
+th {
+  font-size: 18px;
+  text-align: center;
+}
+@media (max-width: 649px) {
+  td,
+  th {
+    font-size: 16px;
+  }
+}
 .visually-hidden {
   clip: rect(0 0 0 0);
   height: 1px;
@@ -231,6 +245,7 @@ body {
 }
 .page-main {
   background-color: #fff;
+  display: block;
   margin: 20px auto;
   padding: 0;
   padding-top: 20px;
@@ -314,11 +329,6 @@ body {
   margin: 0 auto;
   width: 400px;
 }
-td,
-th {
-  font-size: 18px;
-  text-align: center;
-}
 @media (max-width: 649px) {
   .calendar__container {
     -webkit-box-shadow: 0 0 8px 8px #fff;
@@ -330,10 +340,6 @@ th {
   .calendar__table {
     height: 250px;
     width: 300px;
-  }
-  td,
-  th {
-    font-size: 16px;
   }
 }
 .is-today {
